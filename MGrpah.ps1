@@ -20,7 +20,7 @@
 Connect-MgGraph -Scopes "User.Read.All"
 
 # Import usernames (single column, no header)
-$users = Import-Csv "Scripts\UsersList.csv" -Header "LoginName"
+$users = Import-Csv "c:\Scripts\UsersList.csv" -Header "LoginName"
 
 $results = foreach ($row in $users) {
 
